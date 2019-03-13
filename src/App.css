@@ -1,0 +1,58 @@
+.App,html {
+  background-color: #cccfcc
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows:  1fr auto;
+  grid-template-areas: 
+  'nav nav'
+  ' info weather'
+}
+
+ul,li {
+  list-style: none;
+}
+
+a {
+  color: black
+}
+
+.navi {
+  grid-area: nav
+}
+.weather {
+  grid-area: weather;
+}
+.info {
+  grid-area: info
+} 
+
+
+select {
+  cursor: pointer;
+}
+select:hover {
+  background-color: antiquewhite
+}
+
+.forcast__top {
+  align-items: baseline;
+  display: inline;
+}
+.forcast__top__tabs {
+  display: inline-flex;
+}
+
+
+.forcast {
+  display: flex;
+  flex-flow: row;
+}
+
+.forcast__detail {
+  padding: 0 20px;
+  text-align: center;
+  background-color: lightblue;
+}
